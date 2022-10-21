@@ -9,7 +9,7 @@ export default function Card({ image, series, title, price, tag, time }) {
       <div className="card-content">
         <div className="card-heading">
           <span className="card-series">{series}</span>
-          <span className="card-top">Top bid</span>
+          <span className="card-top">Top preços</span>
         </div>
         <div className="card-details">
           <h4 className="card-title">{title}</h4>

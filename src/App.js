@@ -27,7 +27,7 @@ function App() {
       sr.reveal(
         `
         nav,
-        .home,
+        .home,,
         .free,
         .clients,
         .super-rare,
