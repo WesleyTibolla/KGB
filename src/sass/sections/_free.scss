@@ -1,6 +1,8 @@
 .free {
   position: relative;
   margin: 5rem 0;
+  display: flex;
+
   .container {
     display: flex;
     background-color: var(--orange);
@@ -18,16 +20,6 @@
         border-radius: 100%;
         filter: blur(100px);
       }
-      .pink {
-        top: -10%;
-        left: -15%;
-        background-color: var(--pink);
-      }
-      .green {
-        top: -10%;
-        right: -15%;
-        background-color: var(--green);
-      }
     }
     .content {
       z-index: 1;
@@ -44,45 +36,28 @@
       .title {
         font-size: 2rem;
       }
-      .description {
-      }
     }
   }
-  .cards {
+
+  .description {
     display: flex;
-    position: absolute;
-    top: -2rem;
-    right: 40%;
-    .card1 {
-      top: 0;
-      position: absolute;
-      transform: rotate(-10deg);
-      z-index: 3;
-      font-size: 0.6rem;
-      .card-image {
-        img {
-          height: 10rem;
-          width: 12rem;
-        }
-      }
-    }
-    .card2 {
-      top: 0;
-      z-index: 2;
-      position: absolute;
-      left: 10rem;
-      transform: rotate(5deg);
-      font-size: 0.7rem;
-      .card-image {
-        img {
-          height: 10rem;
-        }
-      }
-    }
+    flex-direction: column;
+    margin-top: 2rem;
+    color: var(--accent-color1);
+
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    padding-left: 60px;
   }
+  .p {
+    color: var(--pink);
+  }
+
   @media screen and (min-width: 280px) and (max-width: 1080px) {
     margin: 0;
-    .container {
+    .free .img-fluid {
       padding: 1rem 2rem;
       height: 40vh;
       border-radius: 0;
@@ -101,12 +76,6 @@
         .title {
           font-size: 22px;
         }
-      }
-    }
-    .cards {
-      .card1,
-      .card2 {
-        zoom: 0.3;
       }
     }
   }

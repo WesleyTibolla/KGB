@@ -11,6 +11,7 @@ import Signup from "./components/Signup";
 import SuperRare from "./components/SuperRare";
 import scrollreveal from "scrollreveal";
 import "./sass/index.scss";
+
 function App() {
   const [theme, setTheme] = useState("dark");
   const changeTheme = () => {
