@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.png";
-import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
-import { FaTiktok } from "react-icons/fa";
+import { BsFacebook, BsTwitter, BsLinkedin, } from "react-icons/bs";
+import { FaYoutube } from "react-icons/fa";
 export default function Footer() {
   const links = [
     {
@@ -10,10 +10,10 @@ export default function Footer() {
     },
   ];
   const socialLink = [
-    <BsFacebook />,
-    <BsTwitter />,
-    <BsInstagram />,
-    <FaTiktok />,
+    <a href="https://pt-br.facebook.com/razorcomp/"><BsFacebook /></a>,
+    <a href="https://mobile.twitter.com/razorbrasil"><BsTwitter /></a>,
+    <a href="https://www.linkedin.com/company/razor-computadores-do-brasil"><BsLinkedin /></a>,
+    <a href="https://www.youtube.com/c/RazorComputadores"><FaYoutube /></a>,
   ];
   return (
     <footer>
